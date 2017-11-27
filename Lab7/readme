@@ -1,0 +1,9 @@
+Neste exemplo, foi mostrado como medir a taxa de perda de caminho no controlador POX. A topologia de exemplo é mostrada abaixo.
+ 
+h0 --- s0 --- s1 --- h1
+ 
+h0 enviará pacotes para h1 via s0 e s1. Os pacotes transmitidos através do link entre s0 e s1 podem ser perdidos devido à configuração da taxa de perda de link no mininet script. 
+O objetivo deste exemplo é mostrar como calcular a taxa de perda de caminho (h0-s0-s1-h1) no controlador. Então, fiz alguns pressupostos. 
+O controlador conhece a topologia da rede com antecedência e, portanto, não mostro como descobrir o código da rede e outros códigos relacionados. Basta manter este exemplo o mais simples possível. 
+O controlador enviará flux_stats_request para s0 e s1. Quando o controlador obtém a resposta de s0, ele manterá o número de pacotes para um fluxo específico em input_pkts. 
+Quando o controlador obtém a resposta de s1, ele manterá o número de pacotes recebidos para um fluxo específico em output_pkts. A diferença é os pacotes perdidos.
