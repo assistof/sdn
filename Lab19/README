@@ -1,0 +1,12 @@
+
+Para estudar a transmissão multipath, às vezes preciso gerar múltiplos caminhos com o mesmo custo em uma pesquisa.O exemplo a seguir para mostrar como gerar 2 multipath com igual custo (3) no mininet script.
+Neste exemplo, existem dois caminhos (h1-s1-s2-s3-h2, h1-s1-s4-s3-h2). Cada caminho consiste em 3 switches.
+
+
+H1---s1----s2----s3----H2
+   |    |
+   ----s4---
+
+
+
+

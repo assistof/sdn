@@ -1,0 +1,19 @@
+[Descrição]
+    Com base na latência de monitoramento com OpenFlow , esse exemplo medirá a latência no controlador POX. A topologia de exemplo é mostrada abaixo.
+ 
+                C
+               ---------------
+               |	     |
+              T1	     T2	
+               |             |
+   H0---------S0-----T3------S1------------H1
+
+Onde C é controlador, S0 e S1 são switches, e H0 e H1 são hosts. 
+Devido a alguns motivos, por exemplo, a carga de tráfego variável, o atraso de S0 a S1 pode variar. 
+Portanto, o controlador deve tentar medir o atraso e decidir se deseja rotear o tráfego de S0 para S1 
+ou mudar para outro caminho. Assim, o controlador pode instruir o S0 para enviar o pacote da sonda para S1 e, 
+em seguida, encaminhar de volta para C. Então o controlador pode obter o atraso de S0 para S1 (T3). 
+O tempo total consumido é Ttotal = T1 + T3 + T2. T1 = 0,5 * (Tb -Ta), onde Ta é o momento em que o envio do pacote port_stats_request 
+e Tb é o momento em que recebe o pacote port_stats_received . Da mesma forma, o mesmo método pode ser aplicado para obter T2. Como conseqüência, T3 = Ttotal - T1 - T2.
+
+

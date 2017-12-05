@@ -1,0 +1,7 @@
+ Às vezes, precisamos obter o número total de pacotes relacionados ao fluxo aberto que são transmitidos entre o controlador e os switches. 
+ Como podemos saber se o desempenho das comunicações de fluxo de dados normais entre os hosts é afetado pelas diferentes políticas de controle, por exemplo, instale as regras quando os switches estão se conectadando ao controlador 
+ou quando os swiches não sabem como lidar com os pacotes e, em seguida, encaminhar os pacotes para o controlador. Essas diferentes políticas de controle gerarão um número diferente de pacotes relacionados ao fluxo aberto. 
+Então, no laboratório, é mostrado como obter o número de pacotes relacionados ao fluxo aberto .
+
+
+

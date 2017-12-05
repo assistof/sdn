@@ -1,0 +1,3 @@
+Para estudar a transmissão multipath, às vezes é preciso gerar múltiplos caminhos com o mesmo custo para uma determinada pesquisa. Utilizo o exemplo a seguir para mostrar como gerar 2 multipath com igual custo (3) no mininet script.
+
+

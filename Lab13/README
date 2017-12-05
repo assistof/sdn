@@ -1,0 +1,11 @@
+Vamos criar uma topologia mostrada abaixo. Host1 enviará pacotes para Host2.
+
+H1 -------S1-------S2-------S5
+          |                  |
+	  |		     |
+          S6-----------------S4--------H2
+
+
+
+
+

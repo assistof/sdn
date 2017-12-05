@@ -1,0 +1,4 @@
+
+Originalmente, a regra de roteamento para H1 a H4 é via S1-S2-S5. Após 1 segundo, a regra é alterada para s1-s3-s5. 
+1 segundo depois, a regra é alterada para s1-s4-5. Em seguida, volte para via s1-s2-s5. 
+Esse tipo de exemplo de agendamento round-robin mostra como eu altero dinamicamente as regras de encaminhamento para os switches.

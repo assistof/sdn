@@ -1,0 +1,15 @@
+h0----
+     |
+     s0----s1----h2
+     |
+h1--- 
+
+
+
+
+h0, h1 estão conectados ao interruptor s0, s0 está conectado a s1 e s1 está conectado a h2.
+
+Originalmente, a largura de banda do link entre s0 e s1 é 10Mbps. h2 está executando o servidor iperf e h0, h1 estão executando o iperf client para testar o desempenho. 
+Após a avaliação iperf, o fluxo de h0 a h2 é limitado a 512 kbps. O programa iperf é novamente executado.
+
+ 

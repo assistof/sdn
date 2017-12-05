@@ -1,0 +1,11 @@
+Neste laboratório, é mostrado como obter os recursos de uma determinada porta para uma mudança específica.
+
+Será usada uma topologia padrão do mininet.
+
+Comando de criação:
+
+sudo mn –topo single 
+
+h1---s1---h2
+
+

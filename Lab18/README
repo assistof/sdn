@@ -1,0 +1,21 @@
+Neste laboratório, é mostrar como adicionar um roteador no ambiente Mininet. Então, cada host que se conecta ao openvswitch pode ter um endereço IP de sub-rede diferente. 
+Com a ajuda do roteador, o host com diferentes endereços IP de sub-rede pode se comunicar entre si.
+
+
+Case 1 
+
+No primeiro caso, existem três sub-redes diferentes em um openvswitch, ou seja, 10.0.1.0/24, 10.0.2.0/24 e 10.0.3.0/24. 
+Se diferentes hosts em diferentes sub-redes quiserem conversar um com o outro, devemos adicionar um roteador nesse ambiente, ou seja, r1. 
+Observe que muitos endereços IP diferentes podem ser configurados para uma interface.
+
+
+
+Case 2
+
+No segundo caso, existem duas sub-redes, ou seja, 10.0.1.0/24 e 10.0.2.0/24. Estas são sub-redes que estão conectadas por um roteador, ou seja, r1. Em cada sub-rede, há um openvswitch. Queremos que h1 possa falar com h2.
+
+
+
+Case 3 
+
+No segundo caso, existem duas sub-redes, ou seja, 10.0.1.0/24 e 10.0.2.0/24. Estas são sub-redes que estão conectadas por um roteador, ou seja, r1. Em cada sub-rede, há um openvswitch. Queremos que h1 possa falar com h2, h3 ou h4.
