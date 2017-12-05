@@ -22,7 +22,7 @@ Lab 10: Test features request/reply
 
 Lab 11: Dynamically change the forwarding rules 
 
-Lab 12: Mininet Host talking to the Host on NCTUNS 
+Lab 12: Someone commands interesting on MIninet
 
 Lab 13: Using Bellman-Ford to find a shortest path 
 
